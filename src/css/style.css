@@ -1,4 +1,4 @@
-
+/* 
 :root{
   --bg-color:#333;
   --font-color : #fff;
@@ -35,4 +35,75 @@ body{
 }
 .home-inner{
   padding-top : 150px;
+} */
+
+:root{
+  --bg-color : #333;
+  --font-color : #fff;
+  --primary-color : #008ed6;
+  --dark-overlay : rgba(0,0,0,0.7);
+  --icon-size : 30px;
+}
+
+body{
+  background : var(--bg-color);
+  color : var(--font-color);
+}
+
+.navbar{
+  border-bottom : 3px solid var(--primary-color);
+  opacity : 0.9;
+}
+
+#home-section{
+  background : url("../img/home.jpeg") no-repeat;
+  background-size : cover;
+  min-height : 800px;
+  background-attachment: fixed;
+}
+
+.dark-overlay{
+  background : var(--dark-overlay);
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  min-height : 800px;
+}
+
+.home-inner{
+
+  padding-top : 150px;
+
+}
+
+.card-form{
+  opacity : 0.8;
+}
+
+.fa{
+  color : var(--primary-color);
+  background : white;
+  padding : 4px;
+  border-radius : 5px;
+  font-size : var(--icon-size);
+}
+
+#explore-section .fa{
+
+    color : #fff;
+    background :#333;
+    padding : 4px;
+    border-radius : 5px;
+    font-size : var(--icon-size);
+}
+
+#share-section .fa{
+
+  color : #fff;
+  background :#333;
+  padding : 4px;
+  border-radius : 5px;
+  font-size : var(--icon-size);
+
 }
